@@ -41,7 +41,7 @@
     if (p==1)
     {
          [self sendPost];
-        _countLab.text=[NSString stringWithFormat:@"您有%d份优惠券没有确认",totalCount];
+        
     }
     p=2;
 
@@ -158,6 +158,7 @@
         _selectedBtn2.selected=NO;
         isFinish=0;
         [self sendPost];
+        _countLab.hidden=NO;
     }
     else if (sender==_selectedBtn2)
     {
@@ -165,6 +166,7 @@
         _selectedBtn2.selected=YES;
         isFinish=1;
         [self sendPost];
+        _countLab.hidden=YES;
     }
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -232,7 +234,6 @@
                 UIAlertView * alertView=[[UIAlertView alloc] initWithTitle:@"温馨提示" message:@"确认成功" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK,我知道了。。", nil];
                 [alertView show];
                 [self sendPost];
-                _countLab.text=[NSString stringWithFormat:@"您有%d份优惠券没有确认",totalCount];
             }
             else
             {
@@ -268,6 +269,7 @@
         [self GetCompanyListData];
         [_tableView reloadData];
         
+        _countLab.text=[NSString stringWithFormat:@"您有%d份优惠券没有确认",totalCount];
         // (最好在刷新表格后调用)调用endRefreshing可以结束刷新状态
         [_tableView headerEndRefreshing];
     });

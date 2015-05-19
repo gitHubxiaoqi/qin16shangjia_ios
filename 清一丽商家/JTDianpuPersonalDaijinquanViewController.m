@@ -37,7 +37,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [self sendPost];
-     _countLab.text=[NSString stringWithFormat:@"您有%d张代金券未结算(共计%d元)",totalCount,totalAmount];
+
 }
 - (void)viewDidLoad
 {
@@ -223,7 +223,7 @@
         // 刷新表格
         [self GetCompanyListData];
         [_tableView reloadData];
-        
+        _countLab.text=[NSString stringWithFormat:@"您有%d张代金券未结算(共计%d元)",totalCount,totalAmount];
         // (最好在刷新表格后调用)调用endRefreshing可以结束刷新状态
         [_tableView headerEndRefreshing];
     });

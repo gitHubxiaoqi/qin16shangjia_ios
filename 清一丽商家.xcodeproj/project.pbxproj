@@ -3039,7 +3039,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "/Users/xiaoqi/Desktop/清一丽商家1.1版本/清一丽商家/清一丽商家-Prefix.pch";
+				GCC_PREFIX_HEADER = "清一丽商家/清一丽商家-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -3075,7 +3075,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "/Users/xiaoqi/Desktop/清一丽商家1.1版本/清一丽商家/清一丽商家-Prefix.pch";
+				GCC_PREFIX_HEADER = "清一丽商家/清一丽商家-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
